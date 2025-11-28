@@ -28,7 +28,7 @@ export default function PageRoutes() {
   
   return (
     <>
-    <Router>
+    <Router  basename="/Glamstar-User">
       <Routes>
         <Route path='/Register' element={<SignUp />} />
         <Route path='/Login' element={<SignIn />} />

@@ -46,8 +46,8 @@ export default function PageRoutes() {
           <Route path='/Completed-Bookings' element={<CompletedBookings />} />
           <Route path='/Chats' element={<Chats />} />
           <Route path='/Profile' element={<UserAccount />} />
-          <Route path='/Service-Details' element={<ServiceDetails />} />
-          <Route path='/Service-Flow' element={<ServiceFlow />} />
+          <Route path='/Service-Details/:id' element={<ServiceDetails />} />
+          <Route path='/Service-Flow/:id' element={<ServiceFlow />} />
           <Route path='/Service-Confirmation/:id' element={<ServiceConfirmation />} />
           <Route path='/thank-you' element={<ThankYou />} />
             

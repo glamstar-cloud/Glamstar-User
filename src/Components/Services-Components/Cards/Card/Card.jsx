@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import CardBtn from '../Card-Button/CardBtn'
 
-export default function Card({ title, rating, price, brand, image }) {
+export default function Card({ id,  title, rating, price, brand, image }) {
   return (
     <>
     <div className='bg-white rounded-lg min-w-30 w-auto shadow-xl overflow-hidden pb-2 my-2 mx-2' >
@@ -16,7 +16,7 @@ export default function Card({ title, rating, price, brand, image }) {
         <h2 className='font-semibold font-poppins text-red-800'>{price}</h2>
       </div>
 
-      <CardBtn />
+      <CardBtn id={id} />
 
     </div>
     </>

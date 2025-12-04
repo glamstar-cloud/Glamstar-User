@@ -5,7 +5,7 @@ import Logo from '../../../../Assets/Logo.png'
 export default function FooterLinks() {
   return (
     <>
-    <div className='bg-gray-900 text-white'>
+    <div className='bg-gray-700 text-white'>
       <div className='px-2 py-5 lg:grid lg:grid-cols-2'>
         <div className='space-y-2'>
           <img src={Logo} alt="Company logo" className='w-30' />

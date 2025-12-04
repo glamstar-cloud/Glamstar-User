@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const images = [
-  "/HeroBackground/hero1.png",
-  "/HeroBackground/hero2.png",
-  "/HeroBackground/hero3.png",
+  "./HeroBackground/hero1.png",
+  "./HeroBackground/hero2.png",
+  "./HeroBackground/hero3.png",
 ]
 
 export default function Hero() {

@@ -6,7 +6,7 @@ export default function FilterBtn() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    navigate("/Sign-In");
+    navigate("/register");
   }
   return (
     <>

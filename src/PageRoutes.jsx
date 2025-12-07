@@ -22,6 +22,7 @@ import ServiceDetails from './Pages/Service-Details/ServiceDetails'
 import ServiceFlow from './Pages/Service-Flow/ServiceFlow'
 import ServiceConfirmation from './Pages/Service-Confirmation/ServiceConfirmation'
 import ThankYou from './Pages/Thank-You-Page/ThankYou'
+import Notification from './Pages/Notification/Notification'
 
 
 export default function PageRoutes() {
@@ -30,9 +31,9 @@ export default function PageRoutes() {
     <>
     <Router  basename="/Glamstar-User">
       <Routes>
-        <Route path='/Register' element={<SignUp />} />
-        <Route path='/Login' element={<SignIn />} />
-        <Route path='/Forgot-Password' element={<ForgotPassword />} />
+        <Route path='/register' element={<SignUp />} />
+        <Route path='/login' element={<SignIn />} />
+        <Route path='/forgot-password' element={<ForgotPassword />} />
         
         <Route element={<PublicLayout />}>
         <Route path='/' element={<Homepage />} />
@@ -40,16 +41,17 @@ export default function PageRoutes() {
         </Route>
 
           <Route element={<UserLayout />}>
-          <Route path='/Home' element={<Dashboard />} />
-          <Route path='/Services' element={<Services />} />
-          <Route path='/Active-Services' element={<ActiveServices />} />
-          <Route path='/Completed-Bookings' element={<CompletedBookings />} />
-          <Route path='/Chats' element={<Chats />} />
-          <Route path='/Profile' element={<UserAccount />} />
-          <Route path='/Service-Details/:id' element={<ServiceDetails />} />
-          <Route path='/Service-Flow/:id' element={<ServiceFlow />} />
-          <Route path='/Service-Confirmation/:id' element={<ServiceConfirmation />} />
+          <Route path='/home' element={<Dashboard />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/active-services' element={<ActiveServices />} />
+          <Route path='/completed-bookings' element={<CompletedBookings />} />
+          <Route path='/chats' element={<Chats />} />
+          <Route path='/profile' element={<UserAccount />} />
+          <Route path='/service-details/:id' element={<ServiceDetails />} />
+          <Route path='/service-flow/:id' element={<ServiceFlow />} />
+          <Route path='/service-confirmation/:id' element={<ServiceConfirmation />} />
           <Route path='/thank-you' element={<ThankYou />} />
+          <Route path='notification' element={<Notification />} />
             
           </Route>
         

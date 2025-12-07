@@ -32,8 +32,7 @@ export default function Login() {
     e.preventDefault();
     if (validate()) {
       console.log('Form submitted:', formData);
-      alert('Sign-in successfully!');
-      navigate("/Home"); // ✅ Navigate to user homepage
+      navigate("/home"); // ✅ Navigate to user homepage
     }
   };
 
@@ -102,7 +101,7 @@ export default function Login() {
   {/* forgot link (always right) */}
   <div className="flex justify-end mt-1">
     <Link
-      to="/Forgot-Password"
+      to="/forgot-password"
       className="text-sm text-red-800 font-inter hover:text-gray-800 transition"
     >
       Forgot Password?
@@ -125,7 +124,7 @@ export default function Login() {
         <div className="flex justify-center gap-1 items-center">
           <p className="text-sm text-gray-600">Don't have an account?</p>
           <Link
-            to="/Register"
+            to="/register"
             className="text-red-800 text-sm font-semibold font-inter hover:text-gray-800 transition"
           >
             Sign Up

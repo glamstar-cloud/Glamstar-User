@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import CardBtn from '../Card-Button/CardBtn'
 
 export default function Card({ id, title, rating, price, brand, image }) {

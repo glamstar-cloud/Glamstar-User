@@ -4,6 +4,7 @@ import Logo from '../../../Assets/Logo.png'
 import Dp from '../../../Assets/Chats/Chats1.png'
 import Hamburger from '../../../Icons/hamburger-menu.svg'
 import X from '../../../Icons/X.png'
+import NotifcationIcon from '../../../Icons/icons8-notification-32.png'
 
 export default function UserNavbar() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -35,20 +36,24 @@ export default function UserNavbar() {
   return (
     <>
       <nav className="flex justify-between p-3 shadow bg-white fixed w-full z-50 top-7">
-        <Link to="/Home" className="w-25 sm:w-35 xl:45 my-auto">
+        <Link to="/home" className="w-25 sm:w-35 xl:45 my-auto">
           <img src={Logo} alt="Glamstar Beauty World" />
         </Link>
 
         {/* Desktop Links */}
-        <div className="gap-4 items-center font-inter hidden md:flex">
-          <NavLink to="/Home" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Home</NavLink>
-          <NavLink to="/Services" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Services</NavLink>
-          <NavLink to="/Active-Services" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Active Services</NavLink>
-          <NavLink to="/Completed-Bookings" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Completed Bookings</NavLink>
-          <NavLink to="/Chats" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Chats</NavLink>
+        <div className="gap-3 lg:gap-4 items-center font-inter hidden md:flex">
+          <NavLink to="/home" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Home</NavLink>
+          <NavLink to="/services" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Services</NavLink>
+          <NavLink to="/active-services" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Active Services</NavLink>
+          <NavLink to="/completed-bookings" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Completed Bookings</NavLink>
+          <NavLink to="/chats" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>Chats</NavLink>
         </div>
 
-        <Link to='/Profile' className='relative'>
+        <Link to='/notification' className='fixed right-15 top-11 md:right-17 md:top-13'>
+          <img src={NotifcationIcon} alt='Notifications' className='w-6 h-6' />
+        </Link>
+
+        <Link to='/profile' className='relative'>
           <img src={Dp} alt='Avatar' className='w-12 h-12 rounded-full hidden md:block' />
           <span className='absolute bottom-0 right-0 md:block w-4 h-4 bg-green-500 border-2 border-white rounded-full hidden'></span>
         </Link>
@@ -58,7 +63,7 @@ export default function UserNavbar() {
           className='cursor-pointer md:hidden'
           onClick={() => setOpenMenu(!openMenu)}
         >
-          {openMenu ? <img src={X} alt='Menu Close' className='w-8 h-7' /> : <img src={Hamburger} alt='Menu Open' />}
+          {openMenu ? <img src={X} alt='Menu Close' className='w-8 h-8' /> : <img src={Hamburger} alt='Menu Open' />}
         </button>
 
 
@@ -69,7 +74,7 @@ export default function UserNavbar() {
     className="font-inter absolute w-4xs right-0 top-13 flex flex-col bg-white px-3 rounded-b-md sm:text-lg md:hidden divide-y divide-gray-200"
   >
     <Link
-      to='/Profile'
+      to='/profile'
       className='flex items-center gap-3 py-5'
       onClick={() => setOpenMenu(false)}
     >
@@ -81,7 +86,7 @@ export default function UserNavbar() {
     </Link>
 
     <NavLink
-      to="/Services"
+      to="/services"
       className={({ isActive }) => `py-5 ${isActive ? activeClass : inactiveClass}`}
       onClick={() => setOpenMenu(false)}
     >
@@ -89,7 +94,7 @@ export default function UserNavbar() {
     </NavLink>
 
     <NavLink
-      to="/Active-Services"
+      to="/active-services"
       className={({ isActive }) => `py-5 ${isActive ? activeClass : inactiveClass}`}
       onClick={() => setOpenMenu(false)}
     >
@@ -97,7 +102,7 @@ export default function UserNavbar() {
     </NavLink>
 
     <NavLink
-      to="/Completed-Bookings"
+      to="/completed-bookings"
       className={({ isActive }) => `py-5 ${isActive ? activeClass : inactiveClass}`}
       onClick={() => setOpenMenu(false)}
     >
@@ -105,7 +110,7 @@ export default function UserNavbar() {
     </NavLink>
 
     <NavLink
-      to="/Chats"
+      to="/chats"
       className={({ isActive }) => `py-5 ${isActive ? activeClass : inactiveClass}`}
       onClick={() => setOpenMenu(false)}
     >

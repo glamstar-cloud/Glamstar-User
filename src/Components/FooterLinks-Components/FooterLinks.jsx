@@ -15,33 +15,33 @@ export default function FooterLinks() {
         <div className='grid grid-cols-2 space-y-5 pt-5 sm:grid-cols-3 md:flex md:justify-between md:px-10 lg:px-0'>
           <ul className='grid self-start '>
           <h2 className='font-playfair font-bold pb-3'>Company</h2>
-          <Link to='/Login'>About Us</Link>
-          <Link to='/Login'>Careers</Link>
-          <Link to='/Login'>Blog</Link>
+          <Link to='/login'>About Us</Link>
+          <Link to='/login'>Careers</Link>
+          <Link to='/login'>Blog</Link>
         </ul>
 
         <ul className='grid'>
           <h2 className='font-playfair font-bold pb-3'>Services</h2>
-          <Link to='/Login'>Hair Styling</Link>
-          <Link to='/Login'>Nails</Link>
-          <Link to='/Login'>Makeup</Link>
-          <Link to='/Login'>Bridal</Link>
-          <Link to='/Login'>Tattoos</Link>
-          <Link to='/Login'>Massage</Link>
+          <Link to='/login'>Hair Styling</Link>
+          <Link to='/login'>Nails</Link>
+          <Link to='/login'>Makeup</Link>
+          <Link to='/login'>Bridal</Link>
+          <Link to='/login'>Tattoos</Link>
+          <Link to='/login'>Massage</Link>
         </ul>
 
         <ul className='grid self-start'>
           <h2 className='font-playfair font-bold pb-3'>Support</h2>
-          <Link to='/Login'>Help Center</Link>
-          <Link to='/Login'>Contact Us</Link>
-          <Link to='/Login'>FAQs</Link>
+          <Link to='/login'>Help Center</Link>
+          <Link to='/login'>Contact Us</Link>
+          <Link to='/login'>FAQs</Link>
         </ul>
 
         <ul className='grid self-start'>
           <h2 className='font-playfair font-bold pb-3'>Legal</h2>
-          <Link to='/Login'>Privacy Policy</Link>
-          <Link to='/Login'>Terms Of Service</Link>
-          <Link to='/Login'>Cookie Policy</Link>
+          <Link to='/login'>Privacy Policy</Link>
+          <Link to='/login'>Terms Of Service</Link>
+          <Link to='/login'>Cookie Policy</Link>
         </ul>
         </div>
 

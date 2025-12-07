@@ -54,10 +54,8 @@ export default function Register() {
     e.preventDefault();
     if (validate()) {
       console.log("Form submitted:", formData);
-      alert("Account created successfully!");
-
       // ✅ Navigate to user homepage after successful signup
-      navigate("/Home");
+      navigate("/login");
     }
   };
 
@@ -209,7 +207,7 @@ export default function Register() {
         <div className="flex justify-center gap-1 items-center">
           <p className="text-sm text-gray-600">Already have an account?</p>
           <Link
-            to="/Login"
+            to="/login"
             className="text-red-800 text-sm font-semibold font-inter hover:text-gray-800 transition"
           >
             Sign In

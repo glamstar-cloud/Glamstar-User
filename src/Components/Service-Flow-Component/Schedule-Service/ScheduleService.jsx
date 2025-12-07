@@ -62,7 +62,7 @@ export default function ScheduleService() {
       return;
     }
     alert(`Booking confirmed on ${date.toDateString()} at ${selectedTime}`);
-    navigate("/Home")
+    navigate("/home")
   }
 
   return (
